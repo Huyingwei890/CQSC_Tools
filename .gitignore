@@ -13,6 +13,9 @@ settings.json
 logs/
 output/
 
+# ROI 合并 Template（业务模板，不入库，需自行放置）
+ROI combine Template/
+
 # 系统文件
 Thumbs.db
 Desktop.ini

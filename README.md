@@ -37,6 +37,16 @@ python -m venv .venv
 .venv\Scripts\python.exe -m pip install pywin32
 ```
 
+### 📌 放置 ROI 合并 Template（必做）
+
+出于保密要求，仓库**不包含** ROI 合并功能所用的 Template 文件，需要自行放置：
+
+1. 获取你手头的空白 Template：`Empty SFP254v1.5_Template_16-05-2024_single+multiprogram.xlsx`
+2. 将其放入项目根目录下的 `ROI combine Template/` 文件夹（**保持原文件名**，默认路径即可自动生效）
+3. 若放在其他位置或使用其他模板，在「参数设置 → ROI 合并 → Template 路径」中指定即可
+
+未放置该文件时，ROI 合并工具运行会提示"找不到模板文件"。
+
 之后双击 `启动 CQSC 工具.bat`（自动使用项目自带 `.venv`），或：
 
 ```bash
@@ -65,7 +75,7 @@ CQSC_Tools/
 ├── settings.json           用户配置（首次运行自动生成，不入库）
 ├── core/                   公共组件（配置管理 / Excel 工具 / 变更日志 / 日志窗口）
 ├── modules/                功能模块（与主界面 1~5 一一对应）
-├── ROI combine Template/   ROI 合并所用的空白 Template
+├── ROI combine Template/   ROI 合并所用的空白 Template（不入库，需自行放置，见上方说明）
 ├── logs/                   运行日志（自动生成，不入库）
 ├── output/                 ROI 合并输出（自动生成，不入库）
 └── docs/                   文档图片
